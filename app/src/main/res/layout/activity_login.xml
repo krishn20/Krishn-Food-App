@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/foodAppLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/food_app"
+        android:src="@drawable/logo_food_app" />
+
+    <EditText
+        android:id="@+id/etMobileLogin"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/foodAppLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:autofillHints="@string/enter_mobile_number_10_digits"
+        android:background="@drawable/round_rect_shape"
+        android:drawableStart="@drawable/ic_smartphone"
+        android:drawablePadding="5dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enter_mobile_number_10_digits"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etPassLogin"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etMobileLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/enter_password"
+        android:background="@drawable/round_rect_shape"
+        android:drawableStart="@drawable/ic_password_lock"
+        android:drawablePadding="5dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etPassLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/red"
+        android:fontFamily="@font/sintony"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/sintony"
+        android:onClick="onForgotPasswordTextClick"
+        android:text="@string/forgot_password"
+        android:textAlignment="center"
+        android:textColor="@color/text_selector"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/sintony"
+        android:linksClickable="true"
+        android:onClick="onRegisterTextClick"
+        android:text="@string/don_t_have_an_account_sign_up_now"
+        android:textAlignment="center"
+        android:textColor="@color/text_selector"
+        android:textSize="17sp" />
+
+</RelativeLayout>

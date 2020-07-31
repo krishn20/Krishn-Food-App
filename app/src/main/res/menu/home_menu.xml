@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:orderInCategory="100"
+        android:title="@string/filter"
+        app:showAsAction="always">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/cost_low_to_high"
+                    android:icon="@drawable/ic_filter_cost"
+                    android:title="@string/cost_low_to_high" />
+
+                <item
+                    android:id="@+id/cost_high_to_low"
+                    android:icon="@drawable/ic_filter_cost"
+                    android:title="@string/cost_high_to_low" />
+
+                <item
+                    android:id="@+id/rating"
+                    android:icon="@drawable/ic_filter_cost"
+                    android:title="@string/rating" />
+
+                <item
+                    android:id="@+id/name_alphabetic"
+                    android:icon="@drawable/ic_filter_alpha"
+                    android:title="@string/name_alphabetically" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>
+

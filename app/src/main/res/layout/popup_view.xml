@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgOrderPlaced"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:contentDescription="@string/order_placed"
+        android:src="@drawable/img_order_placed" />
+
+    <TextView
+        android:id="@+id/txtOrderPlaced"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgOrderPlaced"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/patua_one"
+        android:text="@string/your_order_has_been_successfully_placed"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <Button
+        android:id="@+id/btnOrderPlaced"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderPlaced"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/sintony"
+        android:text="@string/ok"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+</RelativeLayout>

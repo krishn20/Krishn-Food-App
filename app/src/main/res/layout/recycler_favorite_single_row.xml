@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="4dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlFavContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgFavResImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_rect_shape"
+            android:contentDescription="@string/restaurant_image"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_food" />
+
+        <ToggleButton
+            android:id="@+id/btnHeartFavorites"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/txtFavResName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFavResImage"
+            android:fontFamily="@font/patua_one"
+            android:padding="4dp"
+            android:text="@string/restaurant_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtFavResName"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/txtFavResCostForOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/sintony"
+            android:padding="4dp"
+            android:text="@string/xxx_person"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtFavResCostForOne"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/txtFavResRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/sintony"
+            android:padding="4dp"
+            android:text="@string/_5_0"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtFavResRating"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/txtFoodItemNameCart"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="6"
+        android:fontFamily="@font/sintony"
+        android:text="@string/food_item_name"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtFoodItemPriceCart"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        android:fontFamily="@font/sintony"
+        android:text="@string/rs_xxx"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+</LinearLayout>

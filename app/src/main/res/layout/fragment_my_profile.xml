@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.MyProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgMyProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/profile_picture"
+        android:src="@drawable/cat_profile_pic_default" />
+
+    <TextView
+        android:id="@+id/txtMyProfileName"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgMyProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_rect_shape"
+        android:fontFamily="@font/patua_one"
+        android:padding="10dp"
+        android:text="@string/user_s_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtMyProfileNumber"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMyProfileName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rect_shape"
+        android:fontFamily="@font/sintony"
+        android:padding="10dp"
+        android:text="@string/_91_1115555555"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtMyProfileEmail"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMyProfileNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rect_shape"
+        android:fontFamily="@font/sintony"
+        android:padding="10dp"
+        android:text="@string/john_doe_com"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtMyProfileAddress"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMyProfileEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rect_shape"
+        android:fontFamily="@font/sintony"
+        android:padding="10dp"
+        android:text="@string/user_s_address"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>
