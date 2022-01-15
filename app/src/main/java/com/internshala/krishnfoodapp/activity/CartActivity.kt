@@ -62,7 +62,7 @@ class CartActivity : AppCompatActivity() {
         //I have used Parcelable instead of Gson to pass complex(user defined) data items between different activities and fragments.
 
         if (intent != null) {
-            finalFoodItemListInCart = intent.getParcelableArrayListExtra("final_list")
+            finalFoodItemListInCart = intent.getParcelableArrayListExtra("final_list")!!
             restaurantIdCart = intent.getStringExtra("restaurant_id_for_cart")
             restaurantNameCart = intent.getStringExtra("restaurant_name_for_cart")
         } else {

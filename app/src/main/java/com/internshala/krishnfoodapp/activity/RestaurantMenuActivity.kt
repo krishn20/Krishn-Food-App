@@ -69,7 +69,7 @@ class RestaurantMenuActivity : AppCompatActivity(), RecyclerMenuAdapter.DataTran
             restaurant_id = intent.getStringExtra("restaurant_id")
             restaurant_name = intent.getStringExtra("restaurant_name")
             list_of_already_selected_items =
-                intent.getParcelableArrayListExtra("already_selected_food_items_list")
+                intent.getParcelableArrayListExtra("already_selected_food_items_list")!!
         } else {
             finish()
             Toast.makeText(
